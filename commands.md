@@ -7,7 +7,7 @@ docker exec -it <Container Id> bash
 ## user name
 su postgres
 
-## list of db
+## List available databases
 
 postgres=#  \l
 
@@ -23,13 +23,13 @@ output :
            |          |          |            |            |            |                 | postgres=CTc/postgres
  threads   | postgres | UTF8     | en_US.utf8 | en_US.utf8 |            | libc            |
 
-## to connect db
+## Switch connection to a new database
 
 postgres=#  \c threads
 
 output : You are now connected to database "threads" as user "postgres".
 
-## list of relation
+## List available tables
 threads=# \d
 
 output:
